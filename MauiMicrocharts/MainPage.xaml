@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiMicrocharts.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:micro="clr-namespace:Microcharts.Maui;assembly=Microcharts">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25" BackgroundColor="DarkGray">
+            <micro:ChartView
+                x:Name="chartView"
+                Grid.Row="1"
+                Chart="{Binding BarChart}"
+                HeightRequest="400"
+                WidthRequest="800" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
